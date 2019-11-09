@@ -5,12 +5,14 @@ tags:
 - Regularization
 - Dropout
 - 翻译
-desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些，如果公式无法打开可以直接访问 md 文件(Chrome中可以安装插件 MathJax Plugin for Github)。
+desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些，如果公式无法打开可以直接访问 md文件(Chrome中可以安装插件 MathJax Plugin for Github)。
 layout: post
 ---
 
-[md 文件](https://github.com/yuqisun/yuqisun.github.io/blob/master/_posts/2019-11-03-dropout-paper.md)  
+[GitHub md 文件](https://github.com/yuqisun/yuqisun.github.io/blob/master/_posts/2019-11-03-dropout-paper.md)
+
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
+<!-- more -->
 
 ## Abstract
 
@@ -18,7 +20,6 @@ layout: post
 2. prevent co-adapting(共适应)
 
 Training 时经过 dropout 后变成指数数量的 "thinned" networks；Test 时，使用完整的有更小权重的网络，近似于平均这些 "thinned" 网络的影响。
-<!-- more -->
 
 ## 1. Introduction
 
