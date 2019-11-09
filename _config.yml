@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Minimal Text
 baseurl: "/Minimal-Text"
@@ -16,3 +17,6 @@ paginate: 5
 paginate_path: "/:num/"
 highlighter: rouge
 permalink: pretty
+=======
+theme: jekyll-theme-cayman
+>>>>>>> e78da878ef5880632a042b0139065d391ac6bb48
