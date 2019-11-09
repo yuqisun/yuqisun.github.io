@@ -10,7 +10,7 @@ layout: post
 ---
 
 [GitHub md 文件](https://github.com/yuqisun/yuqisun.github.io/blob/master/_posts/2019-11-03-dropout-paper.md)
- 
+
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
 <!-- more -->
 
