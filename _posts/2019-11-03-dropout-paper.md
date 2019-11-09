@@ -12,4 +12,4 @@ layout: post
 ## Abstract
 
 1. prevent overfitting..
-2. prevent co-adapting
+2. prevent co-adapting..
