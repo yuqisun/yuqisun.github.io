@@ -1,11 +1,11 @@
 ---
-title: [译] Dropout: A Simple Way to Prevent Neural Networks from Overfitting
+title: [Translate] Dropout: A Simple Way to Prevent Neural Networks from Overfitting
 tags:
 - Deep Learning
 - Regularization
 - Dropout
 - Translate
-desc: 对于论文《Dropout: A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些。
+desc: Translate paper "Dropout: A Simple Way to Prevent Neural Networks from Overfitting".
 layout: post
 ---
 
