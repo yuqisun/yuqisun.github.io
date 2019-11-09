@@ -1,5 +1,5 @@
 ---
-title: Translate - Dropout: A Simple Way to Prevent Neural Networks from Overfitting
+title: Translate - Dropout paper
 tags:
 - Deep Learning
 - Regularization
