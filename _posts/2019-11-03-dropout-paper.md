@@ -1,7 +1,7 @@
 ---
 title: Translate Dropout paper
 tags:
-- Deep Learning
+- DeepLearning
 - Regularization
 - Dropout
 - Translate
@@ -16,6 +16,7 @@ Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec
 
 ## Nunc
 
+..
 
 ## Maecenas
 Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.
