@@ -1,11 +1,11 @@
 ---
 title: Dropout - A Simple Way to Prevent Neural Networks from Overfitting
 tags:
-- Curabitur
-- Dolor
-- Id
-- Facilisis
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula gravida felis et dapibus.
+- Deep Learning
+- Regularization
+- Dropout
+- Translate
+desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些。
 layout: post
 ---
 
