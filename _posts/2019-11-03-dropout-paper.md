@@ -9,6 +9,11 @@ desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Over
 layout: post
 ---
 
+1. prevent overfitting
+2. prevent co-adapting(共适应)
+
+Training 时经过 dropout 后变成指数数量的 "thinned" networks；Test 时，使用完整的有更小权重的网络，近似于平均这些 "thinned" 网络的影响。
+
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
 
 ## Abstract
