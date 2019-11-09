@@ -1,5 +1,5 @@
 ---
-title: [译] Dropout: A Simple Way to Prevent Neural Networks from Overfitting
+title: Dropout - A Simple Way to Prevent Neural Networks from Overfitting
 tags:
 - Curabitur
 - Dolor
