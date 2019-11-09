@@ -16,6 +16,7 @@ Training 时经过 dropout 后变成指数数量的 "thinned" networks；Test �
 
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
 
+
 ## Abstract
 
 1. prevent overfitting
