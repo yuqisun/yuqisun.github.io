@@ -100,7 +100,7 @@ $\mathbf{y}^{(l)}$ 表示第 $l$ 层输出向量  ($\mathbf{y}^{(0)}=\mathbf{x}$
 
 $W^{(l)}$ 和 $\mathbf{b}^{(l)}$ 是第 $l$ 层的权重和偏差
 
-一个标准的前馈神经网络过程可以表示成 ($\text { for } l \in\{0, \ldots, L-1\}$ , any hidden unit $i$)：
+一个标准的前馈神经网络过程可以表示成 ($\text { for } l \in\{0, \ldots, L-1\}$ , any hidden unit $i$):
 
 $z_{i}^{(l+1)}=\mathbf{w}_{i}^{(l+1)} \mathbf{y}^{l}+b_{i}^{(l+1)}$
 
