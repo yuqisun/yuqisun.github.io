@@ -1,11 +1,11 @@
 ---
-title: Translate Dropout paper
+title: Minimal Text
 tags:
-- DeepLearning
-- Regularization
-- Dropout
-- Translate
-desc: Translate paper "Dropout: A Simple Way to Prevent Neural Networks from Overfitting".
+- Curabitur
+- Dolor
+- Id
+- Facilisis
+desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula gravida felis et dapibus.
 layout: post
 ---
 
@@ -16,7 +16,14 @@ Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec
 
 ## Nunc
 
-..
+```html
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+```
 
 ## Maecenas
 Maecenas ex dolor, tincidunt volutpat molestie et, bibendum sed turpis. Fusce dictum dui massa, sed lobortis risus consectetur eget. Quisque ornare quis tortor nec blandit. Donec pretium hendrerit tincidunt. Nulla convallis placerat efficitur. Curabitur tristique nibh vitae suscipit molestie. In commodo quam purus, eget auctor sapien auctor id.
