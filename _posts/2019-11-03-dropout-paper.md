@@ -5,11 +5,9 @@ tags:
 - Regularization
 - Dropout
 - 翻译
-desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些，如果公式无法打开可以直接访问 md文件(Chrome中可以安装插件 MathJax Plugin for Github)。
+desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些。
 layout: post
 ---
-
-[GitHub md 文件](https://github.com/yuqisun/yuqisun.github.io/blob/master/_posts/2019-11-03-dropout-paper.md)
 
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
 <!-- more -->
@@ -100,9 +98,9 @@ $\mathbf{y}^{(l)}$ 表示第 $l$ 层输出向量  ($\mathbf{y}^{(0)}=\mathbf{x}$
 
 $W^{(l)}$ 和 $\mathbf{b}^{(l)}$ 是第 $l$ 层的权重和偏差
 
-一个标准的前馈神经网络过程可以表示成 ($\text { for } l \in\{0, \ldots, L-1\}$ , any hidden unit $i$):
+一个标准的前馈神经网络过程可以表示成 ($\text { for } l \in\{0, \ldots, L-1\}$ , any hidden unit $i$)：
 
-$z_{i}^{(l+1)}=\mathbf{w}_{i}^{(l+1)} \mathbf{y}^{l}+b_{i}^{(l+1)}$
+$z_{i}^{(l+1)}$$=$$\mathbf{w}_{i}^{(l+1)} \mathbf{y}^{l}+b_{i}^{(l+1)}$
 
 $y_{i}^{(l+1)}=f\left(z_{i}^{(l+1)}\right)$
 
