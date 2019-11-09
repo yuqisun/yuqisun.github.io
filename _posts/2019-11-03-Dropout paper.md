@@ -1,5 +1,5 @@
 ---
-title: Translate - Dropout paper
+title: Translate - Dropout paper..
 tags:
 - Deep Learning
 - Regularization
