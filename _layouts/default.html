@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/css/Cutive+Mono.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.min.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-        <script type="text/javascript"
+        <!--<script type="text/javascript"
                 src="{{ site.baseurl }}/util/MathJax.js">
         </script>
         <script type="text/x-mathjax-config">
@@ -21,7 +21,16 @@
                 inlineMath: [['$','$']]
                 }
             });
+        </script>-->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$','$']]
+              }
+            });
         </script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     </head>
     <body>
         {{ content }}
