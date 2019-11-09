@@ -5,7 +5,7 @@ tags:
 - Regularization
 - Dropout
 - 翻译
-desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些，如果公式无法打开可以直接访问 md 文件(Chrome中可以安装插件MathJax Plugin for Github)。
+desc: 对于论文《Dropout - A Simple Way to Prevent Neural Networks from Overfitting》的翻译，以后自己回顾起来更快一些，如果公式无法打开可以直接访问 md 文件(Chrome中可以安装插件 MathJax Plugin for Github)。
 layout: post
 ---
 
