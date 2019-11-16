@@ -17,8 +17,8 @@ theme: # leave it empty
 # social
 author: lorepirri
 image: /thumbnail-jumbo.png
-twitter:
-  username: lorepirri
+#twitter:
+#  username: lorepirri
 
 target-blank:
     rel: nofollow
