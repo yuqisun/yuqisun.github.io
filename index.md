@@ -8,4 +8,4 @@
 layout: home
 ---
 
-装点门面
+Just a blog.
