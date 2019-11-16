@@ -23,4 +23,4 @@ theme: # leave it empty
 target-blank:
     rel: nofollow
 
-header_page_refs: ['now', 'about', 'contact']
+header_page_refs: ['now', 'about']
