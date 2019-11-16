@@ -4,7 +4,7 @@ title: "[译] Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
 tagline: "论文翻译，以后自己回顾起来快一些。"
 ---
 
-[Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
+原文 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
 
 ## Abstract
 
