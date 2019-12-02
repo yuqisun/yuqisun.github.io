@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IDEA plugins"
-tagline: "Common plugins in case re-install IDEA."
+tagline: "Common plugins, in case re-install IDEA."
 ---
 
 ### Develop
