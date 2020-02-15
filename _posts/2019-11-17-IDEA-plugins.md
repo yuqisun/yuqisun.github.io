@@ -4,7 +4,7 @@ title: "IDEA plugins"
 tagline: "Common plugins, in case re-install IDEA."
 ---
 
-### Develop
+## Develop
 
 1. Grep console
 2. Lombok
@@ -18,7 +18,7 @@ tagline: "Common plugins, in case re-install IDEA."
 10. Statistic
 11. *JRebel (need license now)*
 
-### Help
+## Help
 
 1. Key promoter
 2. Statistic
