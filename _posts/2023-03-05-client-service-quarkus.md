@@ -200,3 +200,8 @@ __  ____  __  _____   ___  __ ____  ______
 2023-03-05 23:16:38,280 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-h2, narayana-jta, resteasy-reactive, smallrye-context-propagation, vertx]
 ```
 
+## Stop service 
+```shell
+2023-03-05 23:22:46,386 INFO  [io.quarkus] (Shutdown thread) client-svc-with-quarkus stopped in 0.002s
+```
+
