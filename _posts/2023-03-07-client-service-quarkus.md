@@ -9,7 +9,9 @@ tagline: "Quarkus"
 
 ## 创建空项目
 使用 initializer
-https://code.quarkus.io/?a=client-service-with-quarkus&e=resteasy-reactive&e=jdbc-h2
+https://code.quarkus.io/?a=client-service-with-quarkus&e=resteasy-reactive&e=jdbc-h2  
+![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/client-demo/client_quarkus.png)
+![img_1.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/client-demo/client_quarkus_2.png)
 
 ## 运行项目
 ```shell
