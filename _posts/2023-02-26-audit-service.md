@@ -32,7 +32,7 @@ redis> zcount bwic:rank:bwic:bwicId -inf +inf
 redis> 
 ```
 
-cancel:
+3. cancel:
 ```shell
 redis> zrem bwic:rank:bwic:bwicId client:1
 (integer) 1
