@@ -11,7 +11,7 @@ tagline: "Springboot"
 使用 initializer
 https://start.spring.io/
 
-![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/client-demo/create.png)
+![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/client-demo/create_client_demo.png)
 
 ## application properties
 ```properties
