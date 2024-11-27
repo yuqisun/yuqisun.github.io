@@ -62,6 +62,63 @@ else
 `MII = Max(ResMII; RecMII)`
 
 RecMII(Recurrence Minimum Initiation Interval): 循环的递归约束引起的II。就是虽然节点可以减少，但是DFG层数和缝没变，下一个cycle插入进来还是不能把II降低，这种情况下白折腾。  
+
 ResMII(Resource Minimum II): 硬件资源限制引起的最小II。就是 MxN CGRA，看M，N是多少。
 例如：DFG I = (VI, EI ), 有 |VI| 个节点，
 ![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/cgra/img_2.png)
+DFG节点数除以CGRA PE数向上取整。
+
+需不需要打包节点，得取决于这个值能不能减少，就是看 |VI| 能不能跨越 MxN的边界。  
+比如DFG有34个节点，即|VI|=34，CGRA是4x4=16个PE，34/16=2.125 -> 3，如果打包后只减少了一个节点，即|VI|=33，那33/16=2.0625 -> 3，最终ResMII还是3，白整。  
+如果打包后|VI|=32，那32/16=2，就优化了，值得做。
+
+## 其他一些信息
+有3种方法加速有 if-else-then 的loop：Partial Predication/Full Predication/Dual-issue。 
+Dual-issue 最佳，需要 compiler 支持，这个paper就是弄了个这个compiler。
+
+对比：
+1. 专用加速器：performance, power-efficiency 都最好，但不能 programmable，有限；
+2. FPGA灵活，power-efficiency 高；
+3. GP-GPUs (General-purpose graphics processing units): 因为易于变成和对“parallel loops”的 performence和 power-efficiency好而流行，但只能加速并行循环，因为它的方法是同时执行循环的所有迭代，同时执行非并行循环的迭代不行。
+
+> 并行loop就是无数据依赖
+例如：
+```
+// 向量加法
+for (int i=0; i<N; i++) {
+    c[i] = A[i] + B[i]
+}
+// c[i] 的计算只依赖于 A[i]， B[i]，各次迭代互不干扰可以并行执行
+```
+
+> 非并行
+例如：
+```
+// 累加
+for (int i=0; i<N; i++) {
+    A[i] = A[i-1] + B[i]
+}
+// A[i] 依赖于 A[i-1]，存在顺序，不行
+```
+
+Partial Predication: 不同分支的操作映射到不同的 PE，比如 et, ef，使用 select 合并不同分支的结果；  
+
+Full Predication: 更新同一个变量的操作映射在同一个PE。每个分支按顺序（执行顺序）映射到PE，在某个PE上计算condition，得到h：  
+- 如果h=True，执行 e <- b x X4
+- 如果h反=True，执行 e <- b x X5
+
+Dual-issue 和 Full Predication 都靠 predicate 决定分支执行，也是在同一个 PE，不同的是：
+Full Predication分不同的时钟周期：
+```
+if (x > 0) {
+    y = x + 1
+} else {
+    y = x -1
+}
+```
+在某一个时钟周期，predicate 决定 y = x + 1 是否执行，在下一个时钟周期决定 y = x - 1是否执行。实际就是只能两个分支挨个判断。
+
+Dual-issue猛就猛在 y = x + 1 和 y = x - 1同时映射到同一个 PE，predicate决定执行哪个，在一个时钟周期就完成了整个条件语句。
+
+还有个图对理解 PE结构有帮助：
+![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/cgra/img_3.png)
