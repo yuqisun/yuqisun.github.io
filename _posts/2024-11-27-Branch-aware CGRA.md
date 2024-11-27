@@ -68,9 +68,9 @@ ResMII(Resource Minimum II): 硬件资源限制引起的最小II。就是 MxN CG
 ![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/cgra/img_2.png)
 DFG节点数除以CGRA PE数向上取整。
 
-需不需要打包节点，得取决于这个值能不能减少，就是看 |VI| 能不能跨越 MxN的边界。  
-比如DFG有34个节点，即|VI|=34，CGRA是4x4=16个PE，34/16=2.125 -> 3，如果打包后只减少了一个节点，即|VI|=33，那33/16=2.0625 -> 3，最终ResMII还是3，白整。  
-如果打包后|VI|=32，那32/16=2，就优化了，值得做。
+需不需要打包节点，得取决于这个值能不能减少，就是看 `|VI|` 能不能跨越 MxN的边界。  
+比如DFG有34个节点，即`|VI|`=34，CGRA是4x4=16个PE，34/16=2.125 -> 3，如果打包后只减少了一个节点，即`|VI|`=33，那33/16=2.0625 -> 3，最终ResMII还是3，白整。  
+如果打包后`|VI|`=32，那32/16=2，就优化了，值得做。
 
 ## 其他一些信息
 有3种方法加速有 if-else-then 的loop：Partial Predication/Full Predication/Dual-issue。 
