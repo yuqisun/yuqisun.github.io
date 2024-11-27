@@ -56,3 +56,12 @@ else
         Replace selected pair with Po;
 ```
 
+### 条件
+实际也不是有个DFG就框框盲目打包，要先看有没有好处，就是看打包了结点之后对最终 MII(min initiation interval) 有没有改善，别搞了半天结果都一样。
+主要看两个因素：  
+`MII = Max(ResMII; RecMII)`
+
+RecMII(Recurrence Minimum Initiation Interval): 循环的递归约束引起的II。就是虽然节点可以减少，但是DFG层数和缝没变，下一个cycle插入进来还是不能把II降低，这种情况下白折腾。  
+ResMII(Resource Minimum II): 硬件资源限制引起的最小II。就是 MxN CGRA，看M，N是多少。
+例如：DFG I = (VI, EI ), 有 |VI| 个节点，
+![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/cgra/img_2.png)
