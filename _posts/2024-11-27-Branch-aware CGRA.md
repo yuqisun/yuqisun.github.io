@@ -122,3 +122,10 @@ Dual-issue猛就猛在 y = x + 1 和 y = x - 1同时映射到同一个 PE，pred
 
 还有个图对理解 PE结构有帮助：
 ![img.png](https://raw.githubusercontent.com/yuqisun/yuqisun.github.io/master/_posts/images/cgra/img_3.png)
+
+---
+
+## ++ 讨论后记录
+#### Full 是常规类似Java编程的思路，先判断再选择执行哪一个，这就要求 tile设计更难一些，出了计算还要做判断
+
+#### Partial 是不管哪个都执行，之后再选择 --- 就是我们当前CGRA用的方式
